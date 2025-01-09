@@ -1,4 +1,4 @@
-FROM centos:7
-ADD pseudo_hadoop260.sh /
-RUN bash /pseudo_hadoop260.sh
-EXPOSE 22
+FROM eclipse-temurin:8-jdk-jammy
+ADD pseudo_hadoop285.sh /
+RUN bash /pseudo_hadoop285.sh
+EXPOSE 22 9000 8032
